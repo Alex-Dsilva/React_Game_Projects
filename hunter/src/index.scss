@@ -1,0 +1,11 @@
+@import "./scss/reset";
+@import "./scss/utilities";
+@import "./scss/colors";
+@import "./scss/font";
+
+body {
+  margin: 0;
+  font-family: inter;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

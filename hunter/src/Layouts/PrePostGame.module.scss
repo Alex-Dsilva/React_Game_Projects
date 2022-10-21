@@ -1,0 +1,60 @@
+:root {
+  --button-color: #853594;
+  --main-bg: #43144a;
+  --grid-select: #ee8d94;
+}
+.main {
+  background-color: var(--main-bg);
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 3rem;
+}
+.left_dot_grid,
+.right_dot_grid {
+  background-image: radial-gradient(circle at 50%, #51265c 30%, #43144a 30%);
+  background-position: 0 0;
+  background-size: 15px 15px;
+  width: 30%;
+}
+.content {
+  text-align: center;
+}
+
+.action_button {
+  background-color: var(--button-color);
+  border-radius: 0.3rem;
+  color: #fff;
+  padding: 1rem;
+  border: 1px solid var(--button-color);
+  width: 200px;
+  font-size: 1.2rem;
+}
+.grid_selector_text {
+  color: var(--grid-select);
+  font-size: 1.5rem;
+}
+.grid_select {
+  border: 1px solid var(--grid-select);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: white;
+  font-family: inter !important;
+  background-color: transparent;
+}
+
+@media (max-width: 724px) {
+  .game_character {
+    width: 50%;
+  }
+  .left_dot_grid,
+  .right_dot_grid {
+    display: none;
+  }
+  .main {
+    justify-content: center;
+    background-image: radial-gradient(circle at 50%, #51265c 15%, #43144a 15%);
+    background-position: 0 0;
+    background-size: 15px 15px;
+  }
+}

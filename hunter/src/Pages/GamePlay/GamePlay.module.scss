@@ -1,0 +1,36 @@
+.main {
+  background-image: url(/Assets/images/game-play-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.game_board_wrapper {
+  border: 1px solid #853594;
+  margin: 1rem auto;
+}
+.game_board {
+  background: #fff;
+  background-image: linear-gradient(#853594 0.1em, transparent 0.1em),
+    linear-gradient(90deg, #853594 0.1em, transparent 0.1em);
+}
+
+.game_card {
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  margin: 0 auto;
+  background-color: white;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 724px) {
+  .game_card {
+    padding: 1.5rem 1rem;
+  }
+  .main p {
+    font-size: 0.8rem;
+  }
+}
